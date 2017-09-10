@@ -1,21 +1,21 @@
 {
-  "name": "jsonresume-theme-modern",
+  "name": "jsonresume-theme-aaccurso",
   "version": "0.0.18",
-  "description": "jsonresume-theme-modern =======================",
+  "description": "jsonresume-theme-aaccurso =======================",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jsonresume/jsonresume-theme-modern.git"
+    "url": "https://github.com/aaccurso/jsonresume-theme-aaccurso.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jsonresume/jsonresume-theme-modern/issues"
+    "url": "https://github.com/aaccurso/jsonresume-theme-aaccurso/issues"
   },
-  "homepage": "https://github.com/jsonresume/jsonresume-theme-modern",
+  "homepage": "https://github.com/aaccurso/jsonresume-theme-aaccurso",
   "dependencies": {
     "gravatar": "^1.0.6",
     "lodash": "^2.4.1",
