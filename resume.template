@@ -19,7 +19,7 @@
         <div class="col-md-6 col-sm-12">
         <h1>{{basics.name}}<h1>
 
-        <h2>{{basics.location.city}}</h2>
+        <h2>{{basics.location.city}}, {{basics.location.country}}</h2>
         </div>
         <div class="col-md-6 col-sm-12">
         <img class="media-object img-circle pull-right" data-src="holder.js/64x64" alt="64x64" src="{{basics.gravatar}}" style="width: 100px; height: 100px; margin-top: 20px;">

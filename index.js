@@ -7,9 +7,9 @@ function render(resumeObject) {
 
 
 	_.each(resumeObject.work, function(w){
-		w.startDateYear = w.startDate.substr(0,4);
+		w.startDateYear = w.startDate.substr(0,7);
 		if(w.endDate) {
-			w.endDateYear = w.endDate.substr(0,4);
+			w.endDateYear = w.endDate.substr(0,7);
 		} else { 
 			w.endDateYear = 'Present'
 		}
@@ -20,9 +20,9 @@ function render(resumeObject) {
     }  else {
       e.educationDetail = e.area + ", "+ e.studyType;
     }
-		e.startDateYear = e.startDate.substr(0,4);
+		e.startDateYear = e.startDate.substr(0,7);
 		if(e.endDate) {
-			e.endDateYear = e.endDate.substr(0,4);
+			e.endDateYear = e.endDate.substr(0,7);
 		}  else { 
 			e.endDateYear = 'Present'
 		}
