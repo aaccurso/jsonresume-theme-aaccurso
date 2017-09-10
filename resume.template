@@ -37,15 +37,18 @@
         <strong>Phone:</strong> {{basics.phone}} <br />
         {{/basics.phone}}
         {{#basics.email}}
-        <strong>Email:</strong> {{basics.email}}<br />
+        <strong>Email:</strong> <a href="mailto:{{basics.email}}">{{basics.email}}</a><br />
         {{/basics.email}}
         {{#profiles.twitter}}
         <strong>Twitter:</strong> <a href="http://twitter.com/{{.}}">{{.}}</a><br />
         {{/profiles.twitter}}
+        {{#profiles.linkedin}}
+        <strong>LinkedIn:</strong> <a href="http://linkedin.com/in/{{.}}">{{.}}</a><br />
+        {{/profiles.linkedin}}
         {{#profiles.github}}
         <strong>Github:</strong> <a href="http://github.com/{{.}}">{{.}}</a><br />
-
         {{/profiles.github}}
+        <strong>Website:</strong> <a href="http://{{basics.website}}">{{basics.website}}</a>
         </div>
       </section>
       {{#work.length}}

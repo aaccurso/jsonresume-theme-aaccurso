@@ -30,7 +30,7 @@ function render(resumeObject) {
 	resumeObject.profiles = {};
 
 	_.each(resumeObject.basics.profiles, function(profile){
-    	resumeObject.profiles[profile.network] = profile.username;
+    	resumeObject.profiles[profile.network.toLowerCase()] = profile.username;
 	});
 	console.log(resumeObject.profiles);
 	var theme = fs.readFileSync(__dirname + '/resume.template', 'utf8');
