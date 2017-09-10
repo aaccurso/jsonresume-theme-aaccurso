@@ -51,6 +51,7 @@
         <strong>Website:</strong> <a href="http://{{basics.website}}">{{basics.website}}</a>
         </div>
       </section>
+
       {{#work.length}}
       <section class="row">
         <header class="col-md-3">
@@ -61,7 +62,7 @@
             {{#work}}
             <h3>{{company}}</h3>
             <strong>{{position}}</strong>
-            <p>{{startDateYear}} - {{endDateYear}}</p>
+            <p>{{startDate}} - {{endDate}}</p>
             <p>{{summary}}</p>
             <ul>
               {{#highlights}}
@@ -72,7 +73,31 @@
           </div>
         </div>
       </section>
-      {{/work.length}} 
+      {{/work.length}}
+
+      {{#volunteer.length}}
+      <section class="row">
+        <header class="col-md-3">
+          <h3>Volunteering</h3>
+        </header>
+        <div class="col-md-9">
+          <div class="skills">
+            {{#volunteer}}
+            <h3>{{organization}}</h3>
+            <strong>{{position}}</strong>
+            <p>{{startDate}} - {{endDate}}</p>
+            <p>{{summary}}</p>
+            <ul>
+              {{#highlights}}
+              <li>{{.}}</li>
+              {{/highlights}}
+            </ul>
+            <hr />
+            {{/volunteer}}
+          </div>
+        </div>
+      </section>
+      {{/volunteer.length}}
 
       {{#education.length}}
       <section class="row">
@@ -83,8 +108,8 @@
           <div class="skills">
             {{#education}}
             <h3>{{institution}}</h3>
-            <h4>{{educationDetail}}</h4>
-            <p>{{startDateYear}} - {{endDateYear}}</p>
+            <strong>{{educationDetail}}</strong>
+            <p>{{startDate}} - {{endDate}}</p>
             <p>{{summary}}</p>
             <ul>
               {{#highlights}}
@@ -96,7 +121,8 @@
           </div>
         </div>
       </section>
-      {{/education.length}} 
+      {{/education.length}}
+
       {{#skills.length}}
       <section class="row">
         <header class="col-md-3">
@@ -121,6 +147,7 @@
         </div>
       </section>
       {{/skills.length}}
+
       {{#references.length}}
       <section class="row">
         <header class="col-md-3">
