@@ -7,6 +7,9 @@
     <title>Resume</title>
     <link href="https://bootswatch.com/lumen/bootstrap.min.css" rel="stylesheet" />
    <style>
+    .container {
+      margin-bottom: 30px;
+    }
     </style>
 
   
@@ -147,6 +150,24 @@
         </div>
       </section>
       {{/skills.length}}
+
+      {{#languages.length}}
+      <section class="row">
+        <header class="col-md-3">
+          <h3>Languages</h3>
+        </header>
+        <div class="col-md-9">
+          <div class="row-fluid skills">
+            {{#languages}}
+
+            <p>
+              <strong>{{language}}</strong> – {{fluency}}
+            </p>
+            {{/languages}}
+          </div>
+        </div>
+      </section>
+      {{/languages.length}}
 
       {{#references.length}}
       <section class="row">
