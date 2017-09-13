@@ -7,6 +7,12 @@
     <title>Resume</title>
     <link href="https://bootswatch.com/lumen/bootstrap.min.css" rel="stylesheet" />
    <style>
+     h1 {
+       font-size: 30px;
+     }
+     h2 {
+       font-size: 20px;
+     }
     .container {
       margin-bottom: 30px;
     }
@@ -35,23 +41,31 @@
           <h3>About</h3>
         </header>
         <div class="col-md-9">
-        <p>{{basics.summary}}</p>
-        {{#basics.phone}}
-        <strong>Phone:</strong> {{basics.phone}} <br />
-        {{/basics.phone}}
-        {{#basics.email}}
-        <strong>Email:</strong> <a href="mailto:{{basics.email}}">{{basics.email}}</a><br />
-        {{/basics.email}}
-        {{#profiles.twitter}}
-        <strong>Twitter:</strong> <a href="http://twitter.com/{{.}}">{{.}}</a><br />
-        {{/profiles.twitter}}
-        {{#profiles.linkedin}}
-        <strong>LinkedIn:</strong> <a href="http://linkedin.com/in/{{.}}">{{.}}</a><br />
-        {{/profiles.linkedin}}
-        {{#profiles.github}}
-        <strong>Github:</strong> <a href="http://github.com/{{.}}">{{.}}</a><br />
-        {{/profiles.github}}
-        <strong>Website:</strong> <a href="http://{{basics.website}}">{{basics.website}}</a>
+          <p>{{basics.summary}}</p>
+          <div class="row">
+            <div class="col-md-5">
+              {{#basics.birthdate}}
+              <strong>Birthdate:</strong> {{basics.birthdate}} <br />
+              {{/basics.birthdate}}
+              {{#basics.phone}}
+              <strong>Phone:</strong> {{basics.phone}} <br />
+              {{/basics.phone}}
+              {{#basics.email}}
+              <strong>Email:</strong> <a href="mailto:{{basics.email}}">{{basics.email}}</a><br />
+              {{/basics.email}}
+            </div>
+            <div class="col-md-5">
+              {{#profiles.linkedin}}
+              <strong>LinkedIn:</strong> <a href="http://linkedin.com/in/{{.}}">{{.}}</a><br />
+              {{/profiles.linkedin}}
+              {{#profiles.github}}
+              <strong>Github:</strong> <a href="http://github.com/{{.}}">{{.}}</a><br />
+              {{/profiles.github}}
+              {{#basics.website}}
+              <strong>Website:</strong> <a href="http://{{basics.website}}">{{basics.website}}</a>
+              {{/basics.website}}
+            </div>
+          </div>
         </div>
       </section>
 
