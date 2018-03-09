@@ -22,10 +22,18 @@
       width: 80%;
     }
     .avatar {
-      width: 100px;
-      height: 100px;
-      margin-top: 20px;
-      border-radius: 50%;
+      text-align: right;
+
+      @media screen and (max-width: 540px) {
+        text-align: center;
+      }
+
+      img {
+        width: 100px;
+        height: 100px;
+        margin-top: 20px;
+        border-radius: 50%;
+      }
     }
     </style>
   </head>
@@ -36,8 +44,8 @@
           <h1>{{basics.name}}<h1>
           <h2>{{basics.location.city}}, {{basics.location.country}}</h2>
         </div>
-        <div class="col-md-6 col-sm-12" style="text-align: right;">
-          <img class="avatar media-object img-circle pull-right" data-src="holder.js/64x64" alt="64x64" src="{{basics.picture}}">
+        <div class="col-md-6 col-sm-12 avatar">
+          <img class="media-object img-circle pull-right" data-src="holder.js/64x64" alt="64x64" src="{{basics.picture}}">
         </div>
       </div>
       <hr />
