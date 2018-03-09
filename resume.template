@@ -7,16 +7,25 @@
     <title>Resume</title>
     <link href="https://bootswatch.com/4/lumen/bootstrap.css" rel="stylesheet" />
    <style>
+     body {
+       font-size: 16px;
+     }
      h1 {
-       font-size: 30px;
+       font-size: 2rem;
      }
      h2 {
-       font-size: 20px;
+       font-size: 1.5rem;
      }
     .container {
       margin-top: 30px;
       margin-bottom: 30px;
       width: 80%;
+    }
+    .avatar {
+      width: 100px;
+      height: 100px;
+      margin-top: 20px;
+      border-radius: 50%;
     }
     </style>
   </head>
@@ -24,12 +33,11 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6 col-sm-12">
-        <h1>{{basics.name}}<h1>
-
-        <h2>{{basics.location.city}}, {{basics.location.country}}</h2>
+          <h1>{{basics.name}}<h1>
+          <h2>{{basics.location.city}}, {{basics.location.country}}</h2>
         </div>
         <div class="col-md-6 col-sm-12" style="text-align: right;">
-        <img class="media-object img-circle pull-right" data-src="holder.js/64x64" alt="64x64" src="{{basics.picture}}" style="width: 100px; height: 100px; margin-top: 20px;">
+          <img class="avatar media-object img-circle pull-right" data-src="holder.js/64x64" alt="64x64" src="{{basics.picture}}">
         </div>
       </div>
       <hr />
