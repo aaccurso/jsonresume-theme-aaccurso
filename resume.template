@@ -23,17 +23,17 @@
       }
       .avatar {
         text-align: right;
-
-        @media screen and (max-width: 540px) {
+      }
+      @media screen and (max-width: 540px) {
+        .avatar {
           text-align: center;
         }
-
-        .img-circle {
-          width: 100px;
-          height: 100px;
-          margin-top: 20px;
-          border-radius: 50%;
-        }
+      }
+      .avatar .img-circle {
+        width: 100px;
+        height: 100px;
+        margin-top: 20px;
+        border-radius: 50%;
       }
     </style>
   </head>
