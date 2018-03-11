@@ -91,7 +91,7 @@
         <div class="col-md-9">
           <div class="skills">
             {{#work}}
-            <h3>{{company}}</h3>
+            <h3><a href="{{website}}">{{company}}</a></h3>
             <strong>{{position}}</strong>
             <p>{{startDate}} - {{endDate}}</p>
             <p>{{summary}}</p>
@@ -114,7 +114,7 @@
         <div class="col-md-9">
           <div class="skills">
             {{#volunteer}}
-            <h3>{{organization}}</h3>
+            <h3><a href="{{website}}">{{organization}}</a></h3>
             <strong>{{position}}</strong>
             <p>{{startDate}} - {{endDate}}</p>
             <p>{{summary}}</p>
@@ -138,7 +138,7 @@
         <div class="col-md-9">
           <div class="skills">
             {{#education}}
-            <h3>{{institution}}</h3>
+            <h3><a href="{{website}}">{{institution}}</a></h3>
             <strong>{{educationDetail}}</strong>
             <p>{{startDate}} - {{endDate}}</p>
             <p>{{summary}}</p>
