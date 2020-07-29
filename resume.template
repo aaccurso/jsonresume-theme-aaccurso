@@ -153,7 +153,24 @@
         </div>
       </section>
       {{/education.length}}
-
+      {{#publications.length}}
+      <section class="row">
+        <header class="col-md-3">
+          <h3>Publications</h3>
+        </header>
+        <div class="col-md-9">
+          <div class="skills">
+            {{#publications}}
+            <h3><a href="{{website}}">{{name}}</a></h3>
+            <strong>{{publisher}}</strong>
+            <p>{{releaseDate}}</p>
+            <p>{{summary}}</p>
+            <hr />
+            {{/publications}}
+          </div>
+        </div>
+      </section>
+      {{/publications.length}}
       {{#skills.length}}
       <section class="row">
         <header class="col-md-3">
